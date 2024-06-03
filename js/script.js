@@ -60,7 +60,3 @@ function buscarProducto() {
     }
 }
 
-function venderProductos (){
-
-
-}
