@@ -34,5 +34,12 @@ function filtrarCategoria() {
     const categoriaFiltro = document.getElementById('filtrarCategoria').value;
     const filas = document.getElementById('tablaProductos').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
 
-   
+    for (let i = 0; i < filas.length; i++) {
+        const categoria = filas[i].getElementsByTagName('td')[0].textContent;
+        if (categoria === categoriaFiltro || categoriaFiltro === '') {
+            filas[i].style.display = '';
+        } else {
+            filas[i].style.display = 'none';
+        }
+    }
 }
