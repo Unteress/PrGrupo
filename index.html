@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Tienda</title>
+    <title>Tienda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,12 @@
         <form id="storeForm">
             <div class="input-group">
                 <label for="categoria">Categoría:</label>
-                <input type="text" id="categoria" name="categoria" required>
+                <select id="categoria" name="categoria" required>
+                    <option value="Electrónica">Electrónica</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Juguetes">Juguetes</option>
+                </select>
             </div>
             <div class="input-group">
                 <label for="producto">Producto:</label>
@@ -37,7 +42,11 @@
             <input type="text" id="buscarProducto" placeholder="Buscar producto">
             <button type="button" onclick="buscarProducto()">Buscar</button>
             <select id="filtrarCategoria" onchange="filtrarCategoria()">
-                <label for="">Filtrar por categoria</label><option value="">Todas las categorías</option>
+                <option value="">Todas las categorías</option>
+                <option value="Electrónica">Electrónica</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Comida">Comida</option>
+                <option value="Juguetes">Juguetes</option>
             </select>
         </div>
 
@@ -57,6 +66,6 @@
             </tbody>
         </table>
     </div>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
