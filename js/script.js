@@ -11,7 +11,3 @@ function buscarProducto() {
     }
 }
 
-function venderProductos (){
-
-
-}
